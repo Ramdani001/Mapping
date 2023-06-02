@@ -26,9 +26,7 @@
         </div>
     </div>
 
-    <div id="contohContent">
-
-    </div>
+    <?php include('infoDialog.php'); ?>
 
     <script src="leaflet/leaflet.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

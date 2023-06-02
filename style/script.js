@@ -27,6 +27,19 @@ function getColor(d) {
            "white";
 }
 
+function openModalWithData(data) {
+  var nameInput = document.getElementById('Id_Unit');
+  var emailInput = document.getElementById('Name_Unit');
+
+  // Mengisi nilai form input dengan data dari fitur koleksi
+  nameInput.value = data.Id_Pointer;
+  emailInput.value = data.Name_Point;
+
+  // Membuka modal dialog
+  $('#infoModal').modal('show');
+
+}
+
 // Access the features in the collection
 const features = Pointer.features;
 
@@ -42,13 +55,54 @@ features.forEach((feature) => {
     const marker = L.marker([coordinates[1], coordinates[0]]);
     
     marker.on('click', function () {
-      const properties = feature.properties.Id_Pointer;
-      console.log('Marker clicked:', properties);
+      const properties = feature.properties;
+
+        document.getElementById('Id_Pointer').textContent = properties.Id_Pointer;
+        document.getElementById('Name_Point').textContent = properties.Name_Point;
+        document.getElementById('Coordinates1').textContent = coordinates[1];
+        document.getElementById('Coordinates2').textContent = coordinates[0];
+      
+        // Menyimpan data ke LocalStorage
+        localStorage.setItem('Id_Pointer', properties.Id_Pointer);
+        
+        $('#infoModal').modal('show');
     });
     
     marker.addTo(map);
   }
 });
+
+$('#infoModal').on('show.bs.modal', function () {
+  // var Local_Id_Pointer = localStorage.getItem('Id_Pointer');
+  // console.log(Local_Id_Pointer);
+
+
+  
+var myData = localStorage.getItem('Id_Pointer');
+
+// Permintaan ke Server
+$.ajax({
+  url: 'search.php', // Ganti dengan URL endpoint PHP Anda
+  method: 'POST', // Ubah metode sesuai kebutuhan Anda
+  data: { searchData: myData }, // Kirim data dari LocalStorage ke server
+  success: function(response) {
+    // Tangani respon dari server
+    console.log(response);
+  },
+  error: function(error) {
+    console.error('Error:', error);
+  }
+});
+
+
+});
+
+
+// $(document).on('click', '#getIdPointer', function() {
+//   var Local_Id_Pointer = localStorage.getItem('Id_Pointer');
+//   console.log(Local_Id_Pointer);
+// });
+
 
 function RegionStyle(feature){
     return{
@@ -61,5 +115,3 @@ function RegionStyle(feature){
 }
 
 L.geoJson(Region, {style: RegionStyle}).addTo(map);
-
-

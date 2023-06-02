@@ -1,67 +1,67 @@
-Id_Zona,Name_Zona,Type,Status
-JLN01,Jalan,Jalan,
-TMN1,Taman 1,Industri,
-TMN2,Taman 2,Taman,
-JLNUTM,Jalan Utam,Jalan,
-TMN3,Taman 3,Taman,
-TMN4,Taman 4,Taman,
-TMN5,Taman 5,Taman,
-TMN6,Taman 6,Taman,
-TMN7-A,Taman 7-A,Taman,
-TMN7-B,Taman 7-B,Taman,
-SCRT,Security,Security,
-PSINF,Pusat Info,Pusat Info,
-MSHLA,Mushola,Mushola,
-GZBO,Gazebo,Gazebo,
-C1,Zone C1,Unit C,
-C2,Zone C2,Unit C,
-D1,Zone D1,Unit D,
-D2,Zone D2,Unit D,
-D3,Zone D3,Unit D,
-D4,Zone D4,Unit D,
-B1,Zone B1,Unit B,
-B2,Zone B2,Unit B,
-B3,Zone B3,Unit B,
-B4,Zone B4,Unit B,
-B5,Zone B5,Unit B,
-B6,Zone B6,Unit B,
-B7,Zone B7,Unit B,
-B8,Zone B8,Unit B,
-B9,Zone B9,Unit B,
-B10,Zone B10,Unit B,
-B11,Zone B11,Unit B,
-B12,Zone B12,Unit B,
-B13,Zone B13,Unit B,
-B14,Zone B14,Unit B,
-B15,Zone B15,Unit B,
-B16,Zone B16,Unit B,
-B17,Zone B17,Unit B,
-B18,Zone B18,Unit B,
-B19,Zone B19,Unit B,
-B20,Zone B20,Unit B,
-B21,Zone B21,Unit B,
-B22,Zone B22,Unit B,
-B23,Zone B23,Unit B,
-B24,Zone B24,Unit B,
-A1,Zone A1,Unit A,
-A2,Zone A2,Unit A,
-A3,Zone A3,Unit A,
-A4,Zone A4,Unit A,
-A5,Zone A5,Unit A,
-A6,Zone A6,Unit A,
-A7,Zone A7,Unit A,
-A8,Zone A8,Unit A,
-A9,Zone A9,Unit A,
-A10,Zone A10,Unit A,
-A11,Zone A11,Unit A,
-A12,Zone A12,Unit A,
-A13,Zone A13,Unit A,
-A14,Zone A14,Unit A,
-A15,Zone A15,Unit A,
-A16,Zone A16,Unit A,
-A17,Zone A17,Unit A,
-A18,Zone A18,Unit A,
-A19,Zone A19,Unit A,
-A20,Zone A20,Unit A,
-A21,Zone A21,Unit A,
-A22,Zone A22,Unit A,
+Id_Zona,Name_Zona,Type,Status,Luas Bangunan,Luas Tanah,Image
+JLN01,Jalan,Jalan,,"13,001",12000,1.png
+TMN1,Taman 1,Industri,,10900,9000,1.png
+TMN2,Taman 2,Taman,,,,1.png
+JLNUTM,Jalan Utam,Jalan,,,,1.png
+TMN3,Taman 3,Taman,,,,1.png
+TMN4,Taman 4,Taman,,,,1.png
+TMN5,Taman 5,Taman,,,,1.png
+TMN6,Taman 6,Taman,,,,1.png
+TMN7-A,Taman 7-A,Taman,,,,1.png
+TMN7-B,Taman 7-B,Taman,,,,1.png
+SCRT,Security,Security,,,,1.png
+PSINF,Pusat Info,Pusat Info,,,,1.png
+MSHLA,Mushola,Mushola,,,,1.png
+GZBO,Gazebo,Gazebo,,,,1.png
+C1,Zone C1,Unit C,Sold,10000,8900,1.png
+C2,Zone C2,Unit C,,,,1.png
+D1,Zone D1,Unit D,,,,1.png
+D2,Zone D2,Unit D,,10000,8900,1.png
+D3,Zone D3,Unit D,Ready,,,1.png
+D4,Zone D4,Unit D,,,,1.png
+B1,Zone B1,Unit B,,,,1.png
+B2,Zone B2,Unit B,,,,1.png
+B3,Zone B3,Unit B,,,,1.png
+B4,Zone B4,Unit B,,,,1.png
+B5,Zone B5,Unit B,,,,1.png
+B6,Zone B6,Unit B,,,,1.png
+B7,Zone B7,Unit B,,,,1.png
+B8,Zone B8,Unit B,,,,1.png
+B9,Zone B9,Unit B,,,,1.png
+B10,Zone B10,Unit B,,,,1.png
+B11,Zone B11,Unit B,,,,1.png
+B12,Zone B12,Unit B,,,,1.png
+B13,Zone B13,Unit B,,,,1.png
+B14,Zone B14,Unit B,,,,1.png
+B15,Zone B15,Unit B,,,,1.png
+B16,Zone B16,Unit B,,,,1.png
+B17,Zone B17,Unit B,,,,1.png
+B18,Zone B18,Unit B,,,,1.png
+B19,Zone B19,Unit B,,,,1.png
+B20,Zone B20,Unit B,,,,1.png
+B21,Zone B21,Unit B,,,,1.png
+B22,Zone B22,Unit B,,,,1.png
+B23,Zone B23,Unit B,,,,1.png
+B24,Zone B24,Unit B,,,,1.png
+A1,Zone A1,Unit A,,,,1.png
+A2,Zone A2,Unit A,,,,1.png
+A3,Zone A3,Unit A,,,,1.png
+A4,Zone A4,Unit A,,,,1.png
+A5,Zone A5,Unit A,,,,1.png
+A6,Zone A6,Unit A,,,,1.png
+A7,Zone A7,Unit A,,,,1.png
+A8,Zone A8,Unit A,,,,1.png
+A9,Zone A9,Unit A,,,,1.png
+A10,Zone A10,Unit A,,,,1.png
+A11,Zone A11,Unit A,,,,1.png
+A12,Zone A12,Unit A,,,,1.png
+A13,Zone A13,Unit A,,,,1.png
+A14,Zone A14,Unit A,,,,1.png
+A15,Zone A15,Unit A,,,,1.png
+A16,Zone A16,Unit A,,,,1.png
+A17,Zone A17,Unit A,,,,1.png
+A18,Zone A18,Unit A,,,,1.png
+A19,Zone A19,Unit A,,,,1.png
+A20,Zone A20,Unit A,,,,1.png
+A21,Zone A21,Unit A,,,,1.png
+A22,Zone A22,Unit A,,,,1.png
