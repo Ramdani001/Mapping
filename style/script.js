@@ -57,10 +57,10 @@ features.forEach((feature) => {
     marker.on('click', function () {
       const properties = feature.properties;
 
-        document.getElementById('Id_Pointer').textContent = properties.Id_Pointer;
-        document.getElementById('Name_Point').textContent = properties.Name_Point;
-        document.getElementById('Coordinates1').textContent = coordinates[1];
-        document.getElementById('Coordinates2').textContent = coordinates[0];
+        // document.getElementById('Id_Pointer').textContent = properties.Id_Pointer;
+        // document.getElementById('Name_Point').textContent = properties.Name_Point;
+        // document.getElementById('Coordinates1').textContent = coordinates[1];
+        // document.getElementById('Coordinates2').textContent = coordinates[0];
       
         // Menyimpan data ke LocalStorage
         localStorage.setItem('Id_Pointer', properties.Id_Pointer);
@@ -87,7 +87,18 @@ $.ajax({
   data: { searchData: myData }, // Kirim data dari LocalStorage ke server
   success: function(response) {
     // Tangani respon dari server
-    console.log(response);
+    
+    var responseArray = JSON.parse(response);
+
+    console.log(responseArray[0].Id_Zone);
+    // console.log(responseArray.length);
+    console.log(typeof responseArray);
+
+    $('#Id_Zona').val(responseArray[0].Id_Zone);
+    $('#Name_Zona').val(responseArray[0].Nama_Zone);
+
+
+
   },
   error: function(error) {
     console.error('Error:', error);
